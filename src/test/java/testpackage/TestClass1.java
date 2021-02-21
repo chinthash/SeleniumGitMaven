@@ -22,6 +22,7 @@ public class TestClass1 {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.name("q")).sendKeys("Shravan", Keys.ENTER);
 		driver.quit();
+		//Added some code for git change
 	}
 
 }
