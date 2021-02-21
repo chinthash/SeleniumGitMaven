@@ -14,7 +14,7 @@ public class TestClass1 {
 	WebDriver driver;
 
 	@Test
-	public void login() {
+	public void login() throws InterruptedException {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.get("https://www.google.com");
@@ -22,8 +22,9 @@ public class TestClass1 {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.name("q")).sendKeys("Shravan", Keys.ENTER);
 		driver.quit();
-		//Added some code for git change
-		//Added some other code
+		Thread.sleep(10000);
+		// Added some code for git change
+		// Added some other code
 	}
 
 }
